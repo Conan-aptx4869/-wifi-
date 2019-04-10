@@ -1,0 +1,19 @@
+/* pages/lbs/lbs.wxss */
+button{
+  margin-top: 20rpx;
+}
+.primary{
+   flex-shrink: 1
+}
+.log-item {
+  margin: 10rpx;
+}
+.wifiList{
+  padding: 20px;
+}
+.wifiList .item{
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

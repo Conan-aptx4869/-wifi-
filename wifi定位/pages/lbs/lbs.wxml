@@ -1,0 +1,23 @@
+<!--pages/lbs/lbs.wxml-->
+<view class='pagebody'>
+  <!-- <view><button bindtap='getWifiListInfo'>获取Wi-Fi列表</button></view> -->
+  <view>
+    <button bindtap='beginGetwifi'>开始扫描</button>
+  </view>
+  <view>
+    <button bindtap='stopGetwifi'>停止扫描</button>
+  </view>
+  <view>
+    <button bindtap='getLbs'>获取坐标位置</button>
+  </view>
+  <view>
+    <button bindtap='clearList'>清空当前数据</button>
+  </view>
+  <view class='wifiList'>
+    <view wx:for="{{showlist}}" class='item'>
+      <text selectable='true'>{{index+1}}. {{item.SSID}}</text>
+      <text selectable='true'>信号强度:{{item.signalStrength}}</text>
+    </view>
+  </view>
+
+</view>
